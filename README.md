@@ -221,3 +221,8 @@ pip install --force-reinstall -r requirements.txt
 ## Архитектура решения
 
 ![img.png](img.png)
+
+##
+Демо версия работы системы:
+https://disk.yandex.ru/i/bibm_p13xZLJQQ
+
