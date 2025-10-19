@@ -3,7 +3,6 @@ import logging
 from typing import Dict, Any
 from langchain_openai import ChatOpenAI
 
-# Импорты агентов
 from src.agents.DeEscalationAgent.deescalation_agent import DeEscalationAgent
 from src.agents.IntentClassIfierAgent.intent_classifier_agent import IntentClassifierAgent
 from src.agents.ToxicDetectorAgent.toxic_detector_agent import ToxicityDetectorAgent
@@ -30,7 +29,6 @@ class TechSupportSystem:
     async def initialize(self):
         """Инициализация всех компонентов системы"""
         try:
-            # Инициализация LLM
             self.llm = ChatOpenAI(
                 model="deepseek/deepseek-v3.2-exp-alt",
                 temperature=0.3,
